@@ -26,9 +26,14 @@ let _FuncForSumArrayNumber = () => { //Эта функция берет из м�
    for (let i = 0; i < ArrowForNumbers.length; i++) {
       ArrayForCountNumber = Number(ArrayForCountNumber) + Number(ArrowForNumbers[i]);
    }
-   return (
-      console.log(ArrayForCountNumber)
-   )
+
+   let newDiv = document.createElement('div');
+   newDiv.innerHTML = `Вот число, которое получилось, если разбить то что ввели Вы и прибавить между собой :  ${ArrayForCountNumber}`;
+   let Div_1 = document.querySelector('.Div_1').prepend(newDiv);
+
+   // return (
+   //    console.log(newDiv)
+   // )
 };
 
 function AllCodeToClearFunction() { //функция очистки массива и поля ввода
