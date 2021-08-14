@@ -1,0 +1,13 @@
+div {
+   width: 200px;
+   margin: 5px auto;
+   display: flex;
+   justify-content: space-around;
+}
+#numbMain {
+   border-radius: 50px;
+   display: inline-block;
+   margin: 20px auto;
+   width: 200px;
+   height: 20px;
+}
